@@ -11,6 +11,7 @@ import (
 
 // Setup forwards std logger to logrus.
 func Setup() {
+	log.SetFlags(0) // remove date and time from the message
 	log.SetOutput(New())
 }
 
